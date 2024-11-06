@@ -24,7 +24,7 @@ lottie_animation = load_lottie_url("https://lottie.host/10ef4447-c72d-44b4-b562-
 # Configure Google Generative AI
 GOOGLE_API_KEY = 'AIzaSyCByDN630R0xn5_wXh4GgZBhBqX3Nw8S90'  # Replace with your actual API key
 genai.configure(api_key=GOOGLE_API_KEY)
-
+st.set_page_config(page_title="AI-Powered Resume Parser and Job Finder")
 # Function to extract text from PDF using PdfReader (PyPDF2 3.x)
 def extract_text_from_pdf(pdf_file):
     pdf_reader = PyPDF2.PdfReader(pdf_file)
@@ -181,8 +181,9 @@ if 'job_roles' in st.session_state:
 with st.container():
     with st.sidebar:
         members = [
+            {"name": "Saksham Jain", "email": "sakshamgr8online@gmail. com",
+             "linkedin": "https://www.linkedin.com/in/saksham-jain-59b2241a4/"},
             {"name": "Rohan Saraswat", "email": "rohan.saraswat2003@gmail. com", "linkedin": "https://www.linkedin.com/in/rohan-saraswat-a70a2b225/"},
-            {"name": "Saksham Jain", "email": "sakshamgr8online@gmail. com", "linkedin": "https://www.linkedin.com/in/saksham-jain-59b2241a4/"},
             {"name": "Shambhavi Kadam", "email": "shambhavi.kadam.btech2021@sitpune.edu.in",
              "linkedin": "https://www.linkedin.com/in/shambhavi-kadam-63157a1a1/"},
             {"name": "Rishit Jain", "email": "rishit.jain.btech2021@sitpune.edu.in",
@@ -198,5 +199,3 @@ with st.container():
             st.write(f"Email: {member['email']}")
             st.write(f"LinkedIn: {member['linkedin']}")
             st.write("")
-
-
