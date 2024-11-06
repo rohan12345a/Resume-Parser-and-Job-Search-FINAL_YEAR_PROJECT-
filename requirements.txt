@@ -1,0 +1,10 @@
+spacy==3.5.0
+streamlit==1.26.0
+PyPDF2==3.0.1
+pandas==1.5.3
+plotly==5.10.0
+google-generativeai==1.0.1  # Replace with actual version if available
+http.client
+jsonlib-python3==1.6.1
+streamlit-lottie==0.0.1
+requests==2.31.0
